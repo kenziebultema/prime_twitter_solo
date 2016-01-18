@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <script src="vendors/angular.min.js"></script>
+    <script src="assets/client.js"></script>
+    <title>Transcendence Through Twitter</title>
+</head>
+<body ng-controller="mainController">
+    <div class="container">
+        <button ng-click="createUsername()">Generate User</button>
+        <div ng-repeat="user in username">
+
+        <a ng-href="http://www.twitter.com/{{user}}" target="_blank">{{user}}</a>
+        </div>
+    </div>
+</body>
+</html>
